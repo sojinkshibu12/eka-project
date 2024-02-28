@@ -11,12 +11,12 @@ const Banner =  ()=>{
         parallaxData={[
           {
             start: 0,
-            end: 1000,
+            end: 2000,
             easing: "ease-in",
             properties: [
               {
                 startValue: 1,
-                endValue: 3,
+                endValue: 15,
                 property: "scale"
               }
             ]
@@ -83,7 +83,7 @@ const Banner =  ()=>{
       </Plx>
      
 
-      <div
+      {/* <div
         style={{
           position: "fixed",
           lefft: 0,
@@ -100,10 +100,13 @@ const Banner =  ()=>{
             height: "100%"
           }}
         ></div>
-      </div>
+      </div> */}
 
+     
 
     </div>
+
+ 
     );
     
 }

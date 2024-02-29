@@ -16,7 +16,7 @@ body{
 .container .sticky{
   position: sticky;
   height: 200vh;
-  background-color: green;
+  background-color: black;
   top: 0;
   
 }

@@ -1,138 +1,33 @@
-import Plx from "react-plx";
-
-import React, { useState, useEffect } from 'react';
-
-
-
+import "./App.css";
+import React from 'react';
+import { useScroll, useTransform, motion} from 'framer-motion';
+import { useRef } from 'react';
 
 const Banner =  ()=>{
+
+  const container = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+
+      target: container,
+
+      offset: ['start start', 'end end']
+
+  })
+
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 2]);
+  const scale2 = useTransform(scrollYProgress,[0,1],[0,1.5]);
     return(
-      
-        <div >
-      <Plx
-        parallaxData={[
-          {
-            start: 0,
-            end: 400,
-            easing: "ease-in",
-            properties: [
-              {
-                startValue: 1,
-                endValue: 15,
-                property: "scale",
-
-              }
-            ]
-          }
-        ]}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "100%",
-          zIndex: 100
-        }}
-      >
-        <img style={{ width: "100%" }} src="leaf1.png" alt="foreground" />
-      </Plx>
-      <Plx
-        parallaxData={[
-          {
-            start: 0,
-            end: 400,
-            properties: [
-              {
-                startValue: 1,
-                endValue: 1.18,
-                property: "scale"
-
-
-
-              }
-            ]
-          }
-        ]}
-        style={{  
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "100%"
-        }}
-      >
-    <img style={{ width: "100%" }} src="city.jpeg" alt="background" />
-      </Plx>
-      <Plx
-        
-        parallaxData={[
-          {
-            start: 0,
-            end: 400,
-            properties: [
-              {
-                startValue: 0,
-                endValue: 1,
-                property: "opacity"
-              }
-            ]
-
-          }
-        ]}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: "100px",
-          marginLeft:"23%",
-          
-          width: "50%"
-        }}
-      >
-        <img style={{ width: "100%" }} src="bgg.png" alt="background" />
-      </Plx>
-
-
-      <Plx
-        
-        parallaxData={[
-          {
-            start: 0,
-            end: 400,
-            properties: [
-              {
-                startValue: 0,
-                endValue: 0,
-                property: "opacity"
-              }
-            ]
-
-          },
-
-          {
-            start: 700,
-            end: 800,
-            properties: [
-              {
-                startValue: 0,
-                endValue: 0.95,
-                property: "opacity"
-              }
-            ]
-
-          }
-        ]}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          height:"100vh",
-          backgroundColor:"black",
-          width: "100%"
-        }}
-      >
-        <div>hallo</div>
-      </Plx>
-    </div>
-
- 
+      <div ref  = {container} className="container">
+          <div className="sticky">
+            <div className="imagecontainer">
+              <motion.img style = {{opacity : scale2}} className = "logo"src="bgg.png" alt="logo" />
+                <img className = "img1"src="city.jpeg" alt="city" />
+                <motion.img style = {{scale : scale}}className = "img2"src="leaf1.png" alt="city" />
+            </div>
+          </div>
+      </div> 
     );
     
 }

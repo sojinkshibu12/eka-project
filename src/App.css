@@ -1,12 +1,19 @@
+<<<<<<< HEAD
 *{
   margin: 0;
   padding: 0;
+=======
+
+body {
+  overscroll-behavior: none;
+>>>>>>> d8e0aeb247ffdd447b47faa7e201ccfcba4fe82d
 }
 
 body{
 
   background-color: black;
 }
+<<<<<<< HEAD
 .container {
   height: 300vh;
   position: relative;
@@ -123,3 +130,21 @@ body{
   }
 } 
 
+=======
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+}
+>>>>>>> d8e0aeb247ffdd447b47faa7e201ccfcba4fe82d

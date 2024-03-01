@@ -5,7 +5,7 @@
 
 body{
 
-  margin-bottom: 50vh;
+  background-color: black;
 }
 .container {
   height: 300vh;
@@ -71,9 +71,55 @@ body{
   font-size: 30px;
 }
 
+.ekate
+{
+  background-color:inherit;
+  display: block;
+  text-align: center;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin-top: 100px;
+}
+.para
+{
+  display: block;
+  margin-top: 20px;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  width:40% ;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.events
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+.posters
+{
+  height: 450px;
+  width: 350px;
+  margin: 10px;
+  
+
+  
+}
+.imgs{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
  @media only screen and (max-width: 510px){
   .logo{
     object-fit:contain;
     transform: scale(1.5);
   }
 } 
+

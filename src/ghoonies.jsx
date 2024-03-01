@@ -1,16 +1,27 @@
+import "./App.css"
+import React from "react";
+import Image1 from "./img/voice of eka.png";
+import Image2 from "./img/voice of eka.png";
+import Image3 from "./img/voice of eka.png";
+import Image4 from "./img/voice of eka.png";
+import Image5 from "./img/voice of eka.png";
+import Image6 from "./img/voice of eka.png";
+import Image7 from "./img/voice of eka.png";
 
-import "./App.css";
+
 const Ghoonies = ()=>{
-    return(
+    const images = [Image1, Image2,Image3,Image4,Image5,Image6,Image7];
 
-        <div className="maincontainer">
-            <div className="secondcontainer">
-                <div >1</div>
-                <div >2</div>
-                <div >3</div>
-                <div >4</div>
-            </div>
-        </div>
+   
+    return(
+        <div className="events">
+
+            {images.map((image, index) => (
+           <div className="posters"><img className = "imgs"key={index} src={image} alt={`Image ${index + 1}`}/></div>
+        ))}
+
+      </div>
+  
     );
 }
 

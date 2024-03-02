@@ -1,4 +1,4 @@
-import "./App.css"
+import "./styles/goonies.css"
 import React from "react";
 import Image1 from "./img/voice of eka.png";
 import Image2 from "./img/voice of eka.png";
@@ -15,10 +15,18 @@ const Ghoonies = ()=>{
    
     return(
         <div className="events">
+          
+          <div className="topbar"></div>
+            <div className="eventheading"><h1>Events</h1></div>
+            <div className="posterdiv">
+              <div className="posterdiv2">
+              {images.map((image, index) => (
+            <div className="posters"><img className = "imgs"key={index} src={image} alt={`Image ${index + 1}`}/></div>
+          ))}
+              </div>
+              
+            </div>
 
-            {images.map((image, index) => (
-           <div className="posters"><img className = "imgs"key={index} src={image} alt={`Image ${index + 1}`}/></div>
-        ))}
 
       </div>
   

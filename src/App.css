@@ -52,49 +52,11 @@ body{
 }
 
 
-.maincontainer{
-  padding: 10px;
-  
-}
-.secondcontainer{
-  display: flex;
-  height: 100vh;
-}
-.secondcontainer > div{
-  flex-direction: column;
-  background-color: DodgerBlue;
-  color: white;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
 
 
 
-.events
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  flex-wrap: wrap;
-}
-.posters
-{
-  height: 450px;
-  width: 350px;
-  margin: 10px;
-  
 
-  
-}
-.imgs{
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  border-radius: 20px;
-}
+
  @media only screen and (max-width: 510px){
   .logo{
     object-fit:contain;

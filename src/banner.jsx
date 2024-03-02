@@ -20,6 +20,7 @@ const Banner =  ()=>{
   const scale2 = useTransform(scrollYProgress,[0,1],[0,3]);
   const opscale = useTransform(scrollYProgress, [0, 1], [1.5,0]);
 
+
     return(
       
       <div  ref  = {container } className="container" >
@@ -28,7 +29,7 @@ const Banner =  ()=>{
             <motion.div  style = {{opacity : opscale}} className="imagecontainer" >
               <motion.img style = {{opacity : scale2}} className = "logo"src="bgg.png" alt="logo" />
                 <img className = "img1"src="city.jpeg" alt="city" />
-                <motion.img style = {{scale : scale}}className = "img2"src="leaf1.png" alt="city" />
+                <motion.img style = {{scale : scale}}className = "img2"src="leaf1.png" alt="leaf" />
             </motion.div>
 
             

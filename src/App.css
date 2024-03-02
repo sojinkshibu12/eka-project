@@ -5,7 +5,7 @@
 
 body{
 
-  margin-bottom: 50vh;
+  background-color: black;
 }
 .container {
   height: 300vh;
@@ -15,7 +15,7 @@ body{
 }
 .container .sticky{
   position: sticky;
-  height: 200vh;
+  height: 100vh;
   background-color: black;
   top: 0;
   
@@ -71,9 +71,34 @@ body{
   font-size: 30px;
 }
 
+
+
+.events
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+.posters
+{
+  height: 450px;
+  width: 350px;
+  margin: 10px;
+  
+
+  
+}
+.imgs{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
  @media only screen and (max-width: 510px){
   .logo{
     object-fit:contain;
     transform: scale(1.5);
   }
 } 
+

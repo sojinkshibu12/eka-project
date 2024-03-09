@@ -1,11 +1,5 @@
-.animate__animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
 
-.animate__fadeIn {
-  animation-name: fadeIn;
-}
+
 
 .events{
   background-color: black;
@@ -32,64 +26,63 @@
 
 .selector{
   display: flex;
-
   font-size: large;
-  border: 2px solid white;
   border-radius: 10px ;
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
-.button1{
-  cursor: pointer;
-  padding: 20px;
-}
+
 .button{
-  border-left: 1px solid white;
+
   cursor: pointer;
   padding: 20px;
+  z-index: 1;
 
 }
 
 .screen-main{
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  margin-top: 20px;
 }
 .screen{
   background-color:#191919;
   border-radius:  5px ;
-
-
-
-
-  
-
 }
 .arrriii{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  padding: 70px;
-  
+  flex-wrap: wrap;
+  padding: 5%;
 }
 
 .posterholder{
 
-margin:10px;
+    margin:4px;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.5s;
+    animation: fadeup 0.5s;
 }
-.image{
-  height: 350px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 10px;
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  
+  
 }
 
-@keyframes fadeIn {
-  from {
+@keyframes fadeup {
+  0%{
     opacity: 0;
+    transform: translateY(30px) scale(0.9);
   }
-  to {
+  100%{
     opacity: 1;
+    transform: translateY(0px) scale(1);
   }
 }

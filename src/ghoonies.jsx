@@ -1,24 +1,56 @@
 import "./styles/goonies.css"
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import { Link } from "react-router-dom";
 import Image1 from "./img/best manager.png";
 import Image2 from "./img/Fashion  Show.png";
 import Image3 from "./img/idea hunt.png";
-import Image4 from "./img/main event p.png";
-import Image5 from "./img/paper presentation.png";
-import Image6 from "./img/theme dance.png";
+import Image4 from "./img/paper presentation.png";
+import Image5 from "./img/theme dance.png";
+import Image6 from "./img/1680948803070.jpg"
 // import Image7 from "./img/voice of eka.png";
 
 
 const Ghoonies = ()=>{
-    const images1 = [Image1, Image2,Image3,Image4,Image5,Image6];
-    const images2 = [Image2, Image1,Image4,Image5,Image3];
-    const images3 = [Image1, Image2,Image3,Image4];
+    const images1 = [{
+      image : Image1,
+      url : "bestmanager"
+    },
+    {
+      image : Image2,
+      url : "fashionshow"
+    },
+    {
+      image : Image3,
+      url : "ideathon"
+    },
+    {
+      image : Image4,
+      url : "paperpresentation"
+    },
+    {
+      image : Image5,
+      url : "themedance"
+    }
+  ];
 
-    let [img , setimg] = useState(images1)
+
+
+    const images2 = [ Image1,Image4,Image5,Image3];
+    const images3 = [Image1, Image2,Image3,Image4];
+    const one = [];
+    const [img, setImg] = useState([]);
+    const [showImages, setShowImages] = useState(false);
+  
+    useEffect(() => {
+      setImg(images1);
+      setShowImages(true);
+    }, []);
+
+
 
     const [button1Styles, setButton1Styles] = useState({
-      color: 'white',
-      background: 'black'
+      color: 'black ',
+      background: 'white'
     });
 
     const [button2Styles, setButton2Styles] = useState({
@@ -34,9 +66,16 @@ const Ghoonies = ()=>{
 
 
 
-
     const click1 = ()=>{
-      setimg(images1);
+      
+    setShowImages(false);
+    setImg(one);
+    setTimeout(() => {
+      setImg(images1);
+      setShowImages(true);
+    }, 100);
+      
+
       setButton1Styles({
         color: 'black',
         background: 'white'
@@ -52,7 +91,13 @@ const Ghoonies = ()=>{
       
     }
     const click2 = ()=>{
-      setimg(images2);
+      setShowImages(false);
+      setImg(one);
+      setTimeout(() => {
+        
+        setImg(images1)
+        setShowImages(true);
+      }, 100);
       setButton1Styles({
         color: 'white',
         background: 'black'
@@ -68,7 +113,16 @@ const Ghoonies = ()=>{
 
     }
     const click3 = ()=>{
-      setimg(images3);
+
+
+      setShowImages(false);
+      setImg(one);
+      setTimeout(() => {
+        setImg(images1);
+        setShowImages(true);
+      }, 100);
+
+
       setButton1Styles({
         color: 'white',
         background: 'black'
@@ -84,9 +138,22 @@ const Ghoonies = ()=>{
     }
 
 
-    
-    return(
-      <div className="events">
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+  
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+    if (windowWidth < 1192) {
+      return (
+        <div className="events">
         <div className="event-head">
           <h1 className="heading">united to innovate</h1>
 
@@ -103,7 +170,7 @@ const Ghoonies = ()=>{
         <div className="screen" id="screenn">
         <div className="arrriii">
             {img.map((image, index) => (
-            <div className="posterholder "><img  className ="image "key={index} src={image} alt={`Image ${index}`} /></div> ))}
+            <div className="posterholder animation"><Link to={image.url}><img  className ="image  " key={index} src={image.image} alt={`Image ${index}`} /></Link></div> ))}
         </div>
         
         </div>
@@ -112,8 +179,50 @@ const Ghoonies = ()=>{
 
 
       </div>
+      );
+    }else{
+      return(
+        <div className="events">
+        <div className="event-head">
+          <h1 className="heading">united to innovate</h1>
+
+          <div className="selector" id = "selector">
+            <div  className="indicator" id="indicator"></div>
+          </div>
+        </div>
+
+        {/* card divs */}
+        <div className="screen-main1">
+
+          <div className="firstcontainer1">
+
+          <div className="screen1" id="screenn">
+        
+            <div className="posterholder1" style = {{'--i': -3} }><img  className ="image1" src = {Image1} alt="photo" /></div> 
+            <div className="posterholder1" style = {{'--i': -2}}><img  className ="image1"  src ={Image3} alt="photo" /></div>
+            <div className="posterholder1" style = {{'--i': -1}} ><img className ="image1"  src ={Image4} alt="photo" /></div>
+            <div className="posterholder1" style = {{'--i': 0}}><img  className ="image1" src ={Image5}  alt="photo" /></div>
+            <div className="posterholder1"  style = {{'--i':1}}><img className ="image1"   src ={Image6} alt="photo" /></div>
+            <div className="posterholder1" style = {{'--i': 2}}><img  className ="image1"  src ={Image2} alt="photo" /></div>
+            <div className="posterholder1" style = {{'--i': 3}}><img  className ="image1" src ={Image2} alt="photo" /></div>
+        </div>
+
+      
+        </div>
+
+        <div className="maineventheaddiv">
+                <h1 className="maineventhead">Main Events</h1>
+            </div>
+      </div>
+
+
+          
+
+      </div>
   
-    );
+      );
+    }
+ 
 }
 
 export default Ghoonies;

@@ -2,11 +2,11 @@
 import Banner from "./banner"
 import Quotes from "./quote";
 import Ghoonies  from "./ghoonies";
-// import Slider from "./imageslider"
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-export default function App() {
+const App = ()=> {
   return (
     <div>
       <Banner/>
@@ -17,3 +17,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

@@ -1,6 +1,4 @@
 
-
-
 .events{
   background-color: black;
   margin-top: 200px;
@@ -11,7 +9,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 50px;
+  gap: 30px;
 }
 
 .heading{
@@ -67,6 +65,7 @@
     border-radius: 10px;
     
     
+    
 }
 .image {
   height: 100%;
@@ -76,6 +75,8 @@
   
   
 }
+
+
 
 .animation{
   animation: fadeup 0.5s;
@@ -91,12 +92,30 @@
   opacity: 1;
 }
 
-.screen-main1{
-  height: 200vh;
-}
 
 .firstcontainer1{
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction:column-reverse;
+
+}
+
+.firstcontainer2{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction:column-reverse;
+
+}
+
+
+.firstcontainer3{
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,6 +132,20 @@
   font-weight: 600;
   font-style: normal;
 }
+
+.maineventheaddiv3{
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: large;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 200px;
+
+}
+
+
 .screen1{
   position: relative;
   display: flex;
@@ -124,7 +157,6 @@
   width: 240px;
   height: 320px;
   border-radius: 8px;
-  background: white;
   cursor: pointer;
   transition: 0.5s;
   transform-origin: 50% 100%;
@@ -132,7 +164,7 @@
 
 }
 .screen1:hover .posterholder1{
-  transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i)*120px),-50px);
+  transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i)*180px),-50px);
 }
 .screen1 .posterholder1:hover{
 
@@ -147,6 +179,14 @@
   object-fit:fill;
 }
 
+@media  screen and (max-width: 754px){
+  .selector{
+    font-size: medium;
+  }
+  .heading{
+    font-size: 35px;
+  }
+}
 @keyframes fadeup {
   0%{
     opacity: 0;

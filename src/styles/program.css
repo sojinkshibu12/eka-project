@@ -1,0 +1,100 @@
+.maincontainer{
+    height: 120vh;
+    width: 100%;
+}
+
+.subcontainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column; */
+    
+    
+}
+
+.persons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+.person1{
+    width: 400px;
+    height: 500px;
+    background-color: aqua;
+    z-index: 100;
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+.person2{
+    width: 400px;
+    height: 500px;
+    background-color: aqua;
+    z-index: 100;
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+
+.person1{
+    
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: marquee 80s linear infinite;
+
+}
+
+.background-text{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 135px;
+    gap: 20px;
+    top: 0;
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    
+}
+.background-text1{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 135px;
+
+    top: 130px;
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+
+}

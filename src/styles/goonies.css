@@ -2,6 +2,9 @@
 .events{
   background-color: black;
   margin-top: 200px;
+  background-image: url(../img/lines.svg);
+  background-position: center;
+  background-size:contain;
 }
 .event-head{
   display: flex;
@@ -10,18 +13,32 @@
   align-items: center;
   color: white;
   gap: 30px;
+  
 }
 
 .heading{
 
     font-family: "Anta", sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style:italic;
     font-size: 50px;
 
   
 }
+.heading1{
 
+  font-family: "Castoro Titling", serif;
+  font-weight: 700;
+  font-style:italic;
+  font-size: 100px;
+  opacity: 0.7;
+
+
+}
+.headoutline{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.1px;;
+}
 .selector{
   display: flex;
   font-size: large;
@@ -46,7 +63,6 @@
   margin-top: 20px;
 }
 .screen{
-  background-color:#191919;
   border-radius:  5px ;
 }
 .arrriii{

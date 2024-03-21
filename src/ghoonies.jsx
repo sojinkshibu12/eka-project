@@ -188,11 +188,7 @@ const Ghoonies = ()=>{
           {/* <video autoPlay loop muted id="#vedio">
             <source src={vedio} type="vedio/mp4"/>
           </video> */}
-          <h1 className="heading">united to innovate</h1>
-
-          <div className="selector" id = "selector">
-            <div  className="indicator" id="indicator"></div>
-          </div>
+          <h1 className="heading1"><span className="headoutline">united</span> to innovate</h1>
         </div>
 
         {/* card divs */}

@@ -50,7 +50,7 @@
 }
 .ekadis{
 
-    text-align: center;
+    text-align:right;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: italic;
@@ -61,7 +61,7 @@
 
 .ekadis.op{
     margin-right: 50px;
-    text-align: center;
+    text-align:right;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: italic;
@@ -123,5 +123,10 @@
         margin-top: 20px;
         margin-left: 10%;
         
+    }
+
+    .ekadis.op{
+        text-align: center;
+        font-size:15px;
     }
 } 

@@ -10,7 +10,7 @@ const Programs = ()=>{
 
                 <div className="persons">
                     <div className="person1">
-                        <img  className = "image1"src={gworypic} alt="" />
+                        <img  className = "image1"src="" alt="one" />
                         <div className="blackbar">
                             <h1 className="name">Gowry Lekshmi</h1>
                         </div>
@@ -18,7 +18,7 @@ const Programs = ()=>{
 
 
                     <div className="person2">
-                    <img  className = "image1"src={baby} alt="" />
+                    <img  className = "image1"src="" alt="two" />
                         <div className="blackbar">
                             <h1 className="name">Baby Jean</h1>
                         </div>

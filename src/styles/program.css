@@ -47,7 +47,7 @@
 .person2{
     width: 400px;
     height: 500px;
-    background-color: aqua;
+
     z-index: 100;
     -webkit-transform: skewY(-5deg);
     -moz-transform: skewY(-5deg);

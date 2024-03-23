@@ -38,7 +38,8 @@ const Quotes = ()=>{
             <div className="dateholder"><h3 className={`date ${isVisible ? 'op' : ''}`}>April <br /> 17,18</h3></div>
             </div>
             
-            <div className="humanhanddiv"> < p className={`ekadis ${isVisible ? 'op' : ''}`}>It is a long established fact <br/>that a reader will be distracted by the readable content of a page when <br/>looking at its layout. The point of using<br/> Lorem Ipsum is that it has a more-or-less normal distribution</p></div>
+            <div className="humanhanddiv"> < p className={`ekadis ${isVisible ? 'op' : ''}`}>
+EKA'24: A Techno-Cultural-Entrepreneurial event by PEC,<br /> themed on YOUTH, SCIENCE, and LEADERSHIP, featuring workshops, competitions, stalls, and cultural programs by Gouri Lekshmi and Baby Jean.<br /> Scheduled for April 17th-18th, 2024,<br /> it aims to empower students and attract around 5000 attendees with knowledge, fun, and entertainment.</p></div>
         </div>
     );
 }

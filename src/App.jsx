@@ -6,14 +6,17 @@ import Programs from "./programs";
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Navbar from "./navbar";
 
 const App = ()=> {
   return (
     <div>
+      <Navbar/>
       <Banner/>
       <Quotes/>
       <Ghoonies/>
       <Programs/>
+
       {/* <Slider/> */}
       
     </div>

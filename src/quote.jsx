@@ -32,7 +32,7 @@ const Quotes = ()=>{
 
 
     return(
-        <div className="main-container">
+        <div className="main-container" id="quotes">
 
             <div className="machinehanddiv"><div className={`whatiseka ${isVisible ? 'slide' : ''}`}><h1 >What is eka</h1></div>
             <div className="dateholder"><h3 className={`date ${isVisible ? 'op' : ''}`}>April <br /> 17,18</h3></div>

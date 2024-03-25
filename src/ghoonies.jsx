@@ -153,7 +153,7 @@ const Ghoonies = ()=>{
     }, []);
     if (windowWidth < 1192) {
       return (
-        <div className="events">
+        <div className="events" id="ghoonies">
         <div className="event-head">
           <h1 className="heading">united to innovate</h1>
 
@@ -182,7 +182,7 @@ const Ghoonies = ()=>{
       );
     }else{
       return(
-        <div className="events">
+        <div className="events" id="ghoonies">
         <div className="event-head">
 
           {/* <video autoPlay loop muted id="#vedio">

@@ -23,11 +23,11 @@ const Banner =  ()=>{
 
     return(
       
-      <div  ref  = {container } className="container" >
-          <div className="sticky">
+      <div  ref  = {container } className="container" id = "banner" >
+          <div className="sticky" >
 
             <motion.div  style = {{opacity : opscale}} className="imagecontainer" >
-              <motion.img style = {{opacity : scale2}} className = "logo"src="bgg.png" alt="logo" />
+              <motion.img  style = {{opacity : scale2}} className = "logo"src="bgg.png" alt="logo" />
                 <img className = "img1"src="city2.jpg" alt="city" />
                 <motion.img style = {{scale : scale}}className = "img2"src="leaf1.png" alt="leaf" />
             </motion.div>

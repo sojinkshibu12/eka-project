@@ -21,7 +21,7 @@ const Navbar = () => {
                 setbanner(true);
             else
                 setbanner(false);
-            if(slideInAt >= quotes && slideInAt <= quotes+600 ){
+            if(slideInAt >= quotes-100 && slideInAt <= quotes+600 ){
                 setquote(true);
             }
             else

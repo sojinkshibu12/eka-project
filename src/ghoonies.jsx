@@ -155,7 +155,7 @@ const Ghoonies = ()=>{
       return (
         <div className="events" id="ghoonies">
         <div className="event-head">
-          <h1 className="heading">united to innovate</h1>
+          <h1 className="heading"><span className="headoutline1">united</span>  to innovate</h1>
 
           <div className="selector" id = "selector">
             <div  className="indicator" id="indicator"></div>

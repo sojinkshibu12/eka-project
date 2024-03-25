@@ -3,8 +3,8 @@
   background-color: black;
   margin-top: 200px;
   background-image: url(../img/lines.svg);
-  background-position: center;
-  background-size:contain;
+  background-position:initial;
+  background-size:auto;
 }
 .event-head{
   display: flex;
@@ -18,7 +18,7 @@
 
 .heading{
 
-    font-family: "Anta", sans-serif;
+    font-family: "Castoro Titling", serif;
     font-weight: 100;
     font-style:italic;
     font-size: 50px;
@@ -38,6 +38,11 @@
 .headoutline{
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.1px;;
+}
+
+.headoutline1{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px;
 }
 .selector{
   display: flex;

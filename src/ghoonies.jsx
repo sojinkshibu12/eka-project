@@ -6,6 +6,7 @@ import Image2 from "./img/Fashion  Show.png";
 import Image3 from "./img/idea hunt.png";
 import Image4 from "./img/paper presentation.png";
 import Image5 from "./img/theme dance.png";
+import Image6 from "./img/Make the wall.png";
 // import vedio from "./img/hexa.mp4"
 // import Image7 from "./img/voice of eka.png";
 
@@ -30,6 +31,11 @@ const Ghoonies = ()=>{
     {
       image : Image5,
       url : "themedance"
+    },
+
+    {
+      image : Image6,
+      url : "makethewall"
     }
   ];
 
@@ -160,8 +166,8 @@ const Ghoonies = ()=>{
           <div className="selector" id = "selector">
             <div  className="indicator" id="indicator"></div>
             <div  style={button1Styles} className="button" id = "#button1" onClick={click1}  >main events</div>
-            <div style={button2Styles} className="button" id = "#button2" onClick={click2}>workshops</div>
-            <div style={button3Styles} className="button"id = "#button3"  onClick={click3} >dept events</div>
+            <div style={button2Styles} className="button" id = "#button2" >workshops</div>
+            <div style={button3Styles} className="button"id = "#button3"   >dept events</div>
             
           </div>
         </div>
@@ -183,26 +189,24 @@ const Ghoonies = ()=>{
     }else{
       return(
         <div className="events" id="ghoonies">
+
+        
         <div className="event-head">
 
-          {/* <video autoPlay loop muted id="#vedio">
-            <source src={vedio} type="vedio/mp4"/>
-          </video> */}
           <h1 className="heading1"><span className="headoutline">united</span> to innovate</h1>
         </div>
-
-        {/* card divs */}
         <div className="screen-main1">
 
           <div className="firstcontainer1">
 
           <div className="screen1" id="screenn">
-        
+            <div className="posterholder1"  style = {{'--i':-3}}><Link to={"/makethewall"}><img className ="image1"   src ={Image6} alt="photo" /></Link></div>
             <div className="posterholder1" style = {{'--i': -2} }><Link to={"/bestmanager"}><img  className ="image1" src = {Image1} alt="photo" /></Link></div> 
             <div className="posterholder1" style = {{'--i': -1}}><Link to={"/themedance"}><img  className ="image1"  src ={Image5} alt="photo" /></Link></div>
-            <div className="posterholder1" style = {{'--i': -0}} ><Link to={"/ideathon"}><img className ="image1"  src ={Image3} alt="photo" /></Link></div>
+            <div className="posterholder1" style = {{'--i': 0}} ><Link to={"/ideathon"}><img className ="image1"  src ={Image3} alt="photo" /></Link></div>
             <div className="posterholder1" style = {{'--i': 1}}><Link to={"/paperpresentation"}><img  className ="image1" src ={Image4}  alt="photo" /></Link></div>
             <div className="posterholder1"  style = {{'--i':2}}><Link to={"/fashionshow"}><img className ="image1"   src ={Image2} alt="photo" /></Link></div>
+            <div className="posterholder1"  style = {{'--i':3}}><Link to={"/makethewall"}><img className ="image1  front"   src ={Image6} alt="photo" /></Link></div>
 
         </div>
 
@@ -221,7 +225,7 @@ const Ghoonies = ()=>{
 
 
 
-            <div className="firstcontainer2">
+            {/* <div className="firstcontainer2">
 
 <div className="screen1" id="screenn">
 
@@ -243,11 +247,11 @@ const Ghoonies = ()=>{
 
 
 
-  </div>
+  </div> */}
 
 
 
-
+{/* 
   <div className="firstcontainer3">
 
 <div className="screen1" id="screenn">
@@ -270,7 +274,7 @@ const Ghoonies = ()=>{
 
 
 
-  </div>
+  </div> */}
 
             
       </div>

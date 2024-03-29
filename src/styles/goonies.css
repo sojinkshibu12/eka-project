@@ -1,18 +1,20 @@
 
 .events{
   background-color: black;
-  margin-top: 200px;
+  padding-top: 200px;
   background-image: url(../img/lines.svg);
   background-position:initial;
   background-size:auto;
+  padding-bottom: 100px;
 }
 .event-head{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #FFE382;
   gap: 30px;
+  text-align: center;
   
 }
 
@@ -22,6 +24,7 @@
     font-weight: 100;
     font-style:italic;
     font-size: 50px;
+    
 
   
 }
@@ -145,7 +148,7 @@
 
 }
 .maineventheaddiv{
-  color: white;
+  color: #FFF5C2;
   display: block;
   text-align: center;
   font-size: large;
@@ -155,14 +158,14 @@
 }
 
 .maineventheaddiv3{
-  color: white;
+  color: #FFF5C2;
   display: block;
   text-align: center;
   font-size: large;
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
   font-style: normal;
-  margin-bottom: 200px;
+
 
 }
 

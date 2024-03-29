@@ -1,5 +1,5 @@
 .maincontainer{
-    height: 120vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -8,8 +8,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* display: flex;
-    flex-direction: column; */
     
     
 }
@@ -21,7 +19,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     gap: 50px;
 }
 .person1{
@@ -37,6 +34,7 @@
     transform: skewY(-5deg);
 
     transition: 0.25s;
+    background-color:  #FFE382;
 }
 
 .person1:hover{
@@ -47,7 +45,7 @@
 .person2{
     width: 400px;
     height: 500px;
-
+    background-color:  #FFE382;
     z-index: 100;
     -webkit-transform: skewY(-5deg);
     -moz-transform: skewY(-5deg);
@@ -79,9 +77,13 @@
     animation: marquee 80s linear infinite;
 
 }
-
-.background-text{
+.backgroundmain{
     position: absolute;
+    top:-100px;
+    display: flex;
+    flex-direction: column;
+}
+.background-text{
     color: white;
     display: flex;
     flex-direction: row;
@@ -96,13 +98,11 @@
     
 }
 .background-text1{
-    position: absolute;
     color: white;
     display: flex;
     flex-direction: row;
     font-size: 135px;
-
-    top: 130px;
+    
     -webkit-transform: skewY(-5deg);
     -moz-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);
@@ -136,12 +136,16 @@
 
 @media  screen and (max-width: 890px) and (min-width: 638px){
     .person1{
-        height: 400px;
-        width: 300px;
+        height: 350px;
+        width: 250px;
     }
     .person2{
-        height: 400px;
-        width: 300px;
+        height: 350px;
+        width: 250px;
+    }
+
+    .backgroundmain{
+        gap: 50px;
     }
 }
 

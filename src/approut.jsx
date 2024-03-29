@@ -12,6 +12,7 @@ const AppRoutes = ()=>{
             <Route path = "/ideathon" element = {<span>ideathon</span>} />
             <Route path = "/paperpresentation" element = {<span>paperpresentation</span>} />
             <Route path = "/themedance" element = {<span>themedance</span>} />
+            <Route path = "/makethewall" element = {<span>makethewall</span>} />
             <Route path = "*" element = {<Navigate  to = "/"/>}/>
 
         </Routes>

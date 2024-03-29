@@ -12,9 +12,9 @@ const Navbar = () => {
         const handleScroll = ()=>{
             const slideInAt = window.scrollY + window.innerHeight ;
             const banner = document.querySelector('#banner').offsetTop;
-            const quotes = document.querySelector('#quotes').offsetTop + document.querySelector('#quotes').offsetHeight;
+            const quotes = document.querySelector('#mainconatainer_quotes').offsetTop + document.querySelector('#mainconatainer_quotes').offsetHeight;
             const ghoonies = document.querySelector('#ghoonies').offsetTop+500 ;
-            const programs = document.querySelector('#programs').offsetTop ;
+            // const programs = document.querySelector('#programs').offsetTop ;
 
 
             if(slideInAt >= banner && slideInAt <= banner+2000 )
@@ -32,10 +32,10 @@ const Navbar = () => {
             else
                 setghoonies(false);
 
-            if(slideInAt >= programs +500 && slideInAt <= programs+1000 )
-                setprograms(true);
-            else
-                setprograms(false);
+            // if(slideInAt >= programs +500 && slideInAt <= programs+1000 )
+            //     setprograms(true);
+            // else
+            //     setprograms(false);
 
             
         }
@@ -70,39 +70,39 @@ const Navbar = () => {
   const[isbanner,setbanner] = useState(false);
   const[isquote,setquote] = useState(false);
   const[isghoonies,setghoonies] = useState(false);
-  const[isprograms,setprograms] = useState(false);
+  // const[isprograms,setprograms] = useState(false);
 
 
 
   const homeclick1 = () => {
     const element = document.getElementById("banner");
     if (element) {
-      smoothScrollTo(element, 2000); 
+      smoothScrollTo(element, 1000); 
     }
   };
 
   const homeclick2 = () => {
-    const element = document.getElementById("quotes");
+    const element = document.getElementById("mainconatainer_quotes");
     if (element) {
-      smoothScrollTo(element, 2000); 
+      smoothScrollTo(element, 1000); 
     }
   };
 
   const homeclick3 = () => {
     const element = document.getElementById("ghoonies");
     if (element) {
-      smoothScrollTo(element, 2000); 
+      smoothScrollTo(element, 1000); 
     }
   };
 
 
 
-  const homeclick4 = () => {
-    const element = document.getElementById("programs");
-    if (element) {
-      smoothScrollTo(element, 2000); 
-    }
-  };
+  // const homeclick4 = () => {
+  //   const element = document.getElementById("programs");
+  //   if (element) {
+  //     smoothScrollTo(element, 2000); 
+  //   }
+  // };
 
 
 
@@ -113,7 +113,7 @@ const Navbar = () => {
           <h4 className={`link ${isbanner ? 'underlined' : ''}`} onClick={homeclick1}>home</h4>
           <h4 className={`link ${isquote ? 'underlined' : ''}`} onClick={homeclick2}>about</h4>
           <h4 className={`link ${isghoonies ? 'underlined' : ''}`} onClick={homeclick3}>events</h4>
-          <h4 className={`link ${isprograms ? 'underlined' : ''}`} onClick={homeclick4}>programs</h4>
+          {/* <h4 className={`link ${isprograms ? 'underlined' : ''}`} onClick={homeclick4}>programs</h4> */}
         </li>
 
     </div>

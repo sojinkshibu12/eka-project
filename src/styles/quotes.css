@@ -1,132 +1,159 @@
-.main-container{
+.mainconatainer_quotes{
     width: 100%;
-    
+    height: 100vh;
     background-color: black;
-
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 
 }
-.machinehanddiv{
-    background-color: white;
+.ekadismain{
+    width: 100%;
+    height: 100%;
+
+    z-index: 50;
     display: flex;
-    height: 50vh;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    font-size: 70px;
-    font-family: "Fjalla One", sans-serif;
-    font-weight:lighter;
-    font-style:italic;
-
 }
 
-.whatiseka{
-    -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
-
-  transform: translateX(-120%);
-    opacity: 0;
-  transition: opacity 0.0s, transform 0.5s;
-}
-
-.whatiseka.slide{
-    -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
-  margin-left: 50px;
-  transform: translateX(0);
-    opacity: 1;
-}
-
-
-.humanhanddiv{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    overflow: hidden;
-    color: white;
-    height: 50vh;
-
-}
 .ekadis{
-
-    text-align:right;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-    transform: translateX(+110%);
+    height: 500px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    transform: translateY(-5%);
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
 }
 
 .ekadis.op{
-    margin-right: 50px;
-    text-align:right;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.dateholder{
-    
-    margin-right: 50px;
+    height: 500px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-style: normal;
-    font-size:100%;
-    font-weight: 100;
-}
-
-.date{
-    opacity: 0;
-    transition: opacity 0.7s, transform 0.7s;
-}
-
-.date.op{
+    gap: 20px;
+    padding: 20px;
+    transform: translateY(0);
     opacity: 1;
 
 }
 
+.whatiseka{
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
+    font-family: "Fjalla One", sans-serif;
 
+}
+.discpr{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+}
 
-
-
-
-@media  screen and (max-width: 1006px){
-    .machinehanddiv{
-        justify-content: center;
-        font-size: 30px;
-        flex-direction: column;
-    }
-
-    .whatiseka.slide{
-
-      margin-left: 0px;
-     
+.quotes-backgroundmain{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
     
-    }
-    .humanhanddiv{
-        justify-content: center;
-        font-size: medium;
-        
-    }
-    .ekadis.op{
-        margin-right: 0px;
-        
-    }
-    .dateholder{
+}
+.mainrow1{
+    width: 100%;
+    display: flex;
+}
 
-        font-size: large;
-        margin-top: 20px;
-        margin-left: 10%;
-        
+.mainrow2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 220px;
+}
+
+.row1{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    animation: marquee 80s linear infinite;
+
+}
+
+.row2{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    transform: translateX(-200%);
+    animation: marquee2 80s linear infinite;
+
+}
+
+.row11{
+    height: 25vh;
+    width: 400px;
+
+    margin: 10px;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
     }
 
-    .ekadis.op{
-        text-align: center;
-        font-size:15px;
+}
+
+
+@keyframes marquee2 {
+    0% {
+      transform: translateX(-100%);
     }
-} 
+    100% {
+      transform: translateX(0);
+    }
+
+}
+
+
+@media screen and (max-width:577px) {
+    .ekadis.op{
+        height: 400px;
+        width: 300px;
+    }
+    .whatiseka{
+        font-size: 25px;
+    }
+}
+

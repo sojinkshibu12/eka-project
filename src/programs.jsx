@@ -1,6 +1,5 @@
 import "./styles/program.css"
-import gworypic from "./img/gowry.jpg"
-import baby from "./img/baby.jpg"
+
 const Programs = ()=>{
 
     return(

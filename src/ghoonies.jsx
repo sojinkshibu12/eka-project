@@ -8,7 +8,7 @@ import Image4 from "./img/paper presentation.png";
 import Image5 from "./img/theme dance.png";
 import Image6 from "./img/Make the wall.png";
 // import vedio from "./img/hexa.mp4"
-// import Image7 from "./img/voice of eka.png";
+import Image7 from "./img/voice of eka.png";
 
 
 const Ghoonies = ()=>{
@@ -36,6 +36,11 @@ const Ghoonies = ()=>{
     {
       image : Image6,
       url : "makethewall"
+    }
+      ,
+    {
+      image : Image7,
+      url : "voiceofeka"
     }
   ];
 
@@ -205,9 +210,9 @@ const Ghoonies = ()=>{
             <div className="posterholder1" style = {{'--i': -1}}><Link to={"/themedance"}><img  className ="image1"  src ={Image5} alt="photo" /></Link></div>
             <div className="posterholder1" style = {{'--i': 0}} ><Link to={"/ideathon"}><img className ="image1"  src ={Image3} alt="photo" /></Link></div>
             <div className="posterholder1" style = {{'--i': 1}}><Link to={"/paperpresentation"}><img  className ="image1" src ={Image4}  alt="photo" /></Link></div>
-            <div className="posterholder1"  style = {{'--i':2}}><Link to={"/fashionshow"}><img className ="image1"   src ={Image2} alt="photo" /></Link></div>
-            <div className="posterholder1"  style = {{'--i':3}}><Link to={"/makethewall"}><img className ="image1  front"   src ={Image6} alt="photo" /></Link></div>
-
+            
+            <div className="posterholder1"  style = {{'--i':2}}><Link to={"/voiceofeka"}><img className ="image1  front"   src ={Image7} alt="photo" /></Link></div>
+            <div className="posterholder1"  style = {{'--i':3}}><Link to={"/fashionshow"}><img className ="image1"   src ={Image2} alt="photo" /></Link></div>
         </div>
 
       

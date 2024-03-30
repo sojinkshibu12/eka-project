@@ -179,7 +179,7 @@
 .screen1 .posterholder1{
   position: absolute;
   width: 240px;
-  height: 320px;
+  height: 40vh;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.5s;

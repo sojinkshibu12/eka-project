@@ -12,22 +12,25 @@ const Navbar = () => {
         const handleScroll = ()=>{
             const slideInAt = window.scrollY + window.innerHeight ;
             const banner = document.querySelector('#banner').offsetTop;
-            const quotes = document.querySelector('#mainconatainer_quotes').offsetTop + document.querySelector('#mainconatainer_quotes').offsetHeight;
+            const bannerend =  document.querySelector('#banner').offsetTop +  document.querySelector('#banner').offsetHeight;
+            const quotes = document.querySelector('#mainconatainer_quotes').offsetTop +200;
+            const quotesend = document.querySelector('#mainconatainer_quotes').offsetTop + document.querySelector('#mainconatainer_quotes').offsetHeight;
             const ghoonies = document.querySelector('#ghoonies').offsetTop+500 ;
+            const ghooniesend = document.querySelector('#ghoonies').offsetTop+500 + document.querySelector('#ghoonies').offsetHeight;
             // const programs = document.querySelector('#programs').offsetTop ;
 
 
-            if(slideInAt >= banner && slideInAt <= banner+2000 )
+            if(slideInAt >= banner && slideInAt <= bannerend )
                 setbanner(true);
             else
                 setbanner(false);
-            if(slideInAt >= quotes-100 && slideInAt <= quotes+600 ){
+            if(slideInAt >= quotes-100 && slideInAt <= quotesend+100 ){
                 setquote(true);
             }
             else
                 setquote(false);
 
-            if(slideInAt >= ghoonies && slideInAt <= ghoonies+1900 )
+            if(slideInAt >= ghoonies && slideInAt <=ghooniesend )
                 setghoonies(true);
             else
                 setghoonies(false);

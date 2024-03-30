@@ -1,0 +1,39 @@
+
+.mainconttimer{
+    height: 30vh;
+    width: 100%;
+}
+.countdown-container {
+    width: 100%;
+    height: 100%;
+    gap: 6vw;
+    background-color: #DDDDDD;
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdown-values {
+    display: flex;
+    color: #222831;
+
+  
+  }
+  
+  .big-text {
+    font-weight: bold;
+    font-size: 8vh;
+    line-height: 1;
+    margin: 10px;
+  }
+  
+  .countdown-value {
+    width: 10vh;
+
+    text-align: center;
+  }
+  

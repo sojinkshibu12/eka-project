@@ -7,6 +7,8 @@ import Programs from "./programs";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Navbar from "./navbar";
+import Timer from "./timer";
+// import FlipClock from "./flipclock";
 
 
 
@@ -17,6 +19,7 @@ const App = ()=> {
       <Banner/>
       <Quotes/>
       <Ghoonies/>
+      <Timer/>
 
       {/* <Programs/> */}
 

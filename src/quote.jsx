@@ -1,7 +1,7 @@
 import "./styles/quotes.css"
 import React ,{useEffect ,useState} from 'react';
-import { useScroll, useTransform, motion} from 'framer-motion';
-import { useRef } from 'react';
+
+import Lenis from '@studio-freight/lenis'
 import image1 from "./img/imagesquotes/1.jpg"
 import image2 from "./img/imagesquotes/2.jpg"
 import image3 from "./img/imagesquotes/3.jpeg"
@@ -36,8 +36,7 @@ const Quotes = ()=>{
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
-      },
-       
+      },       
        []);
 
 

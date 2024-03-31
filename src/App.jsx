@@ -1,4 +1,4 @@
-import Lenis from '@studio-freight/lenis'
+// import Lenis from '@studio-freight/lenis'
 import Banner from "./banner"
 import Quotes from "./quote";
 import Ghoonies  from "./ghoonies";
@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom/client';
 import Navbar from "./navbar";
 import Timer from "./timer";
 import Autoshow from "./autoshow";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 // import FlipClock from "./flipclock";
 

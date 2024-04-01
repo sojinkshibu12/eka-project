@@ -52,6 +52,7 @@ const Quotes = ()=>{
 
             <div className="whatiseka"><h1>What is eka</h1></div>
             <div className="discpr"><p> EKA'24: A Techno-Cultural-Entrepreneurial event by PEC,<br /> themed on YOUTH, SCIENCE, and LEADERSHIP, featuring workshops, competitions, stalls, and cultural programs.<br /> Scheduled for April 17th-18th, 2024,<br /> it aims to empower students and attract around 5000 attendees with knowledge, fun, and entertainment.</p></div>
+            <div className="whatiseka"><h1>April 17,18</h1></div>
           </div>
       </div>
         <div className="quotes-backgroundmain">

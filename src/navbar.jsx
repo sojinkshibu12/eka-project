@@ -113,9 +113,9 @@ const Navbar = () => {
     <div className="navbar">
 
         <li className="navi">
-          <h4 className={`link ${isbanner ? 'underlined' : ''}`} onClick={homeclick1}>home</h4>
-          <h4 className={`link ${isquote ? 'underlined' : ''}`} onClick={homeclick2}>about</h4>
-          <h4 className={`link ${isghoonies ? 'underlined' : ''}`} onClick={homeclick3}>events</h4>
+          <h4 className={`link ${isbanner ? 'underlined' : ''}`} onClick={homeclick1}>HOME</h4>
+          <h4 className={`link ${isquote ? 'underlined' : ''}`} onClick={homeclick2}>ABOUT</h4>
+          <h4 className={`link ${isghoonies ? 'underlined' : ''}`} onClick={homeclick3}>EVENTS</h4>
           {/* <h4 className={`link ${isprograms ? 'underlined' : ''}`} onClick={homeclick4}>programs</h4> */}
         </li>
 

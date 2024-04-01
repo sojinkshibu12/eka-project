@@ -1,14 +1,14 @@
 import "./styles/goonies.css"
 import React, { useState,useEffect } from 'react';
 import { Link } from "react-router-dom";
-import Image1 from "./img/best manager.png";
-import Image2 from "./img/Fashion  Show.png";
-import Image3 from "./img/idea hunt.png";
-import Image4 from "./img/paper presentation.png";
-import Image5 from "./img/theme dance.png";
-import Image6 from "./img/Make the wall.png";
-// import vedio from "./img/hexa.mp4"
-import Image7 from "./img/voice of eka.png";
+import Image1 from "./img/Best Manager.webp";
+import Image2 from "./img/Fashion Show.webp";
+import Image3 from "./img/idea hunt.webp";
+import Image4 from "./img/paper presentation.webp";
+import Image5 from "./img/theme dance.webp";
+import Image6 from "./img/Make the wall.webp";
+
+import Image7 from "./img/voice of eka.webp";
 
 
 const Ghoonies = ()=>{
@@ -181,7 +181,7 @@ const Ghoonies = ()=>{
         <div className="screen" id="screenn">
         <div className="arrriii">
             {img.map((image, index) => (
-            <div className="posterholder animation"><Link to={image.url}><img  className ="image  " key={index} src={image.image} alt={`Image ${index}`} /></Link></div> ))}
+            <div key = {index}className="posterholder animation"><Link to={image.url}><img loading="lazy" className ="image  " key={index} src={image.image} alt={`Image ${index}`} /></Link></div> ))}
         </div>
         
         </div>
@@ -205,14 +205,14 @@ const Ghoonies = ()=>{
           <div className="firstcontainer1">
 
           <div className="screen1" id="screenn">
-            <div className="posterholder1"  style = {{'--i':-3}}><Link to={"/makethewall"}><img className ="image1"   src ={Image6} alt="photo" /></Link></div>
-            <div className="posterholder1" style = {{'--i': -2} }><Link to={"/bestmanager"}><img  className ="image1" src = {Image1} alt="photo" /></Link></div> 
-            <div className="posterholder1" style = {{'--i': -1}}><Link to={"/themedance"}><img  className ="image1"  src ={Image5} alt="photo" /></Link></div>
-            <div className="posterholder1" style = {{'--i': 0}} ><Link to={"/ideathon"}><img className ="image1"  src ={Image3} alt="photo" /></Link></div>
-            <div className="posterholder1" style = {{'--i': 1}}><Link to={"/paperpresentation"}><img  className ="image1" src ={Image4}  alt="photo" /></Link></div>
+            <div className="posterholder1"  style = {{'--i':-3}}><Link to={"/makethewall"}><img loading="lazy" className ="image1"   src ={Image6} alt="photo" /></Link></div>
+            <div className="posterholder1" style = {{'--i': -2} }><Link to={"/bestmanager"}><img loading="lazy" className ="image1" src = {Image1} alt="photo" /></Link></div> 
+            <div className="posterholder1" style = {{'--i': -1}}><Link to={"/themedance"}><img loading="lazy" className ="image1"  src ={Image5} alt="photo" /></Link></div>
+            <div className="posterholder1" style = {{'--i': 0}} ><Link to={"/ideathon"}><img loading="lazy" className ="image1"  src ={Image3} alt="photo" /></Link></div>
+            <div className="posterholder1" style = {{'--i': 1}}><Link to={"/paperpresentation"}><img loading="lazy"  className ="image1" src ={Image4}  alt="photo" /></Link></div>
             
-            <div className="posterholder1"  style = {{'--i':2}}><Link to={"/voiceofeka"}><img className ="image1  front"   src ={Image7} alt="photo" /></Link></div>
-            <div className="posterholder1"  style = {{'--i':3}}><Link to={"/fashionshow"}><img className ="image1"   src ={Image2} alt="photo" /></Link></div>
+            <div className="posterholder1"  style = {{'--i':2}}><Link to={"/voiceofeka"}><img loading="lazy" className ="image1  front"   src ={Image7} alt="photo" /></Link></div>
+            <div className="posterholder1"  style = {{'--i':3}}><Link to={"/fashionshow"}><img loading="lazy" className ="image1"   src ={Image2} alt="photo" /></Link></div>
         </div>
 
       

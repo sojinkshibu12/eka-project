@@ -2,18 +2,18 @@ import "./styles/quotes.css"
 import React ,{useEffect ,useState} from 'react';
 
 import Lenis from '@studio-freight/lenis'
-import image1 from "./img/imagesquotes/1.jpg"
-import image2 from "./img/imagesquotes/2.jpg"
-import image3 from "./img/imagesquotes/3.jpeg"
-import image4 from "./img/imagesquotes/4.jpeg"
-import image5 from "./img/imagesquotes/5.jpg"
-import image6 from "./img/imagesquotes/6.jpg"
-import image7 from "./img/imagesquotes/7.jpg"
-import image8 from "./img/imagesquotes/8.jpeg"
-import image9 from "./img/imagesquotes/9.jpeg"
-import image10 from "./img/imagesquotes/10.jpg"
-import image11 from "./img/imagesquotes/11.jpg"
-import image12 from "./img/imagesquotes/12.jpg"
+import image1 from "./img/imagesquotes/1.webp"
+import image2 from "./img/imagesquotes/2.webp"
+import image3 from "./img/imagesquotes/3.webp"
+import image4 from "./img/imagesquotes/4.webp"
+import image5 from "./img/imagesquotes/5.webp"
+import image6 from "./img/imagesquotes/6.webp"
+import image7 from "./img/imagesquotes/7.webp"
+import image8 from "./img/imagesquotes/8.webp"
+import image9 from "./img/imagesquotes/9.webp"
+import image10 from "./img/imagesquotes/10.webp"
+import image11 from "./img/imagesquotes/11.webp"
+import image12 from "./img/imagesquotes/12.webp"
 
 const Quotes = ()=>{
 
@@ -57,48 +57,48 @@ const Quotes = ()=>{
         <div className="quotes-backgroundmain">
             <div className="mainrow1">
               <div className="row1">
-                    <div className="row11"><img src={image1} alt="" /></div>
-                    <div className="row11"><img src={image2} alt="" /></div>
-                    <div className="row11"><img src={image3} alt="" /></div>
-                    <div className="row11"><img src={image4} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image1} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image2} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image3} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image4} alt="" /></div>
                 </div>
                 <div className="row1">
-                    <div className="row11"><img src={image5} alt="" /></div>
-                    <div className="row11"><img src={image6} alt="" /></div>
-                    <div className="row11"><img src={image7} alt="" /></div>
-                    <div className="row11"><img src={image8} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image5} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image6} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image7} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image8} alt="" /></div>
                 </div>
             </div>
 
 
             <div className="mainrow2">
               <div className="row2">
-                    <div className="row11"><img src={image9} alt="" /></div>
-                    <div className="row11"><img src={image10} alt="" /></div>
-                    <div className="row11"><img src={image11} alt="" /></div>
-                    <div className="row11"><img src={image12} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image9} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image10} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image11} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image12} alt="" /></div>
                 </div>
                 <div className="row2">
-                    <div className="row11"><img src={image1} alt="" /></div>
-                    <div className="row11"><img src={image2} alt="" /></div>
-                    <div className="row11"><img src={image3} alt="" /></div>
-                    <div className="row11"><img src={image4} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image1} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image2} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image3} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image4} alt="" /></div>
                 </div>
             </div>
 
 
             <div className="mainrow1">
               <div className="row1">
-                    <div className="row11"><img src={image1} alt="" /></div>
-                    <div className="row11"><img src={image2} alt="" /></div>
-                    <div className="row11"><img src={image3} alt="" /></div>
-                    <div className="row11"><img src={image4} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image1} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image2} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image3} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image4} alt="" /></div>
                 </div>
                 <div className="row1">
-                    <div className="row11"><img src={image5} alt="" /></div>
-                    <div className="row11"><img src={image6} alt="" /></div>
-                    <div className="row11"><img src={image7} alt="" /></div>
-                    <div className="row11"><img src={image8} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image5} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image6} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image7} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image8} alt="" /></div>
                 </div>
             </div>
 
@@ -106,16 +106,16 @@ const Quotes = ()=>{
 
             <div className="mainrow2">
               <div className="row2">
-                    <div className="row11"><img src={image9} alt="" /></div>
-                    <div className="row11"><img src={image10} alt="" /></div>
-                    <div className="row11"><img src={image11} alt="" /></div>
-                    <div className="row11"><img src={image12} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image9} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image10} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image11} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image12} alt="" /></div>
                 </div>
                 <div className="row2">
-                    <div className="row11"><img src={image1} alt="" /></div>
-                    <div className="row11"><img src={image2} alt="" /></div>
-                    <div className="row11"><img src={image3} alt="" /></div>
-                    <div className="row11"><img src={image4} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image1} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image2} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image3} alt="" /></div>
+                    <div className="row11"><img loading="lazy"src={image4} alt="" /></div>
                 </div>
             </div>
 

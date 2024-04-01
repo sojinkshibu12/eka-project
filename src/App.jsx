@@ -9,7 +9,8 @@ import ReactDOM from 'react-dom/client';
 import Navbar from "./navbar";
 import Timer from "./timer";
 import Autoshow from "./autoshow";
-// import { useEffect } from "react";
+import { useEffect } from "react";
+import Roboticexpo from "./roboticexpo";
 
 // import FlipClock from "./flipclock";
 
@@ -33,6 +34,7 @@ const App = ()=> {
       <Ghoonies/>
       <Timer/>
       <Autoshow/>
+      <Roboticexpo/>
       {/* <Programs/> */}
 
 

@@ -27,9 +27,9 @@ const Banner =  ()=>{
           <div className="sticky" >
 
             <motion.div  style = {{opacity : opscale}} className="imagecontainer" >
-              <motion.img  style = {{opacity : scale2}} className = "logo"src="bgg.png" alt="logo" />
+              <motion.img  style = {{opacity : scale2}} className = "logo"src="bgg.webp" alt="logo" />
                 <img loading="lazy" className = "img1"src="ancient.webp" alt="city" />
-                <motion.img style = {{scale : scale}}className = "img2"src="leaf1.png" alt="leaf" />
+                <motion.img style = {{scale : scale}}className = "img2"src="leaf1.webp" alt="leaf" />
             </motion.div>
 
             

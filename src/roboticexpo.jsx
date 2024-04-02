@@ -1,9 +1,9 @@
 import "./styles/robot.css"
 import {  useEffect,useState } from "react";
 import { useTransition,animated, useSpring } from "@react-spring/web";
-import robot1 from  "./img/robot/747c28f9244304994e8de5fe1249fe7e-removebg-preview.png"
-import robot2 from  "./img/robot/maximalfocus-eZWGK5sIiBM-unsplas.png"
-import title from"./img/robot/robotic expo (1).png"
+import robot1 from  "./img/robot/747c28f9244304994e8de5fe1249fe7e-removebg-preview (1).webp"
+import robot2 from  "./img/robot/maximalfocus-eZWGK5sIiBM-unsplas.webp"
+import title from"./img/robot/robotic.webp"
 
 const Roboticexpo = ()=>{
 

@@ -1,7 +1,9 @@
 .fsdiv{
     height: 100vh;
     width: 100%;
-    text-align: center;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .fsr{
@@ -9,6 +11,15 @@
     height: 90%;
     object-fit: contain;
 }
+.rulesp{
+    
+    height: 70%;
+    text-align: left;
+    font-size: 35px;
+    color: white;
+
+}
+
 
 .register{
     text-decoration: none;
@@ -17,12 +28,18 @@
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 50px;
+
     border-radius: 20px;
     transition: all 0.5s;
+    
 
 }
-
+.buttoncont{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
 .register:hover{
     opacity: 0.8;
 }

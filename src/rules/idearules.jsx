@@ -8,8 +8,10 @@ const Idears = ()=>{
     return(
         <div className="fsdiv">
             <img className ="fsr"src={fsr} alt="" />
-
-            <a className = "register"href="#">Register</a>
+            <div className='buttoncont'>
+            <a className = "register"href="https://docs.google.com/forms/d/e/1FAIpQLSfl8K00IoouL-gKSDXc8HYTbPDFS7H2XfkJKiHiKvzfaUpwig/viewform">Register</a>
+            </div>
+            
         </div>
     );
 

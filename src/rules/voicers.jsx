@@ -7,8 +7,10 @@ const Voicers = ()=>{
     return(
         <div className="fsdiv">
             <img className ="fsr"src={fsr} alt="" />
-
-            <a className = "register"href="#">Register</a>
+            <div className='buttoncont'>
+            <a className = "register"href="https://docs.google.com/forms/d/e/1FAIpQLSf-aHvVksYsLVqGtmlyKwe26Z7zFdgMn5IaL--qfKDb70WsFQ/viewform?vc=0&c=0&w=1&flr=0">Register</a>
+            </div>
+            
         </div>
     );
 

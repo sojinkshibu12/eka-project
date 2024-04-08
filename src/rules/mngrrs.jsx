@@ -7,8 +7,10 @@ const Mngrrs = ()=>{
     return(
         <div className="fsdiv">
             <img className ="fsr"src={fsr} alt="" />
-
-            <a className = "register"href="#">Register</a>
+            <div className='buttoncont'>
+            <a className = "register"href="https://docs.google.com/forms/d/e/1FAIpQLSdwTWIcJk7fOHF_eyL4hVdkBFRR4NpppCSDzyDL9A1IYEelaA/viewform">Register</a>
+            </div>
+            
         </div>
     );
 

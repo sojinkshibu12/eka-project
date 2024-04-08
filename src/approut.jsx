@@ -5,6 +5,9 @@ import Fsrules from "./rules/fsrules.jsx"
 import Idears from "./rules/idearules.jsx"
 import Mngrrs from "./rules/mngrrs.jsx"
 import Voicers from "./rules/voicers.jsx"
+import Paperrs from "./rules/paperrs.jsx"
+import Themedancerules from "./rules/themedancers.jsx"
+import Makethewallrs from "./rules/makethwallrs.jsx"
 
 const AppRoutes = ()=>{
     return(
@@ -15,9 +18,9 @@ const AppRoutes = ()=>{
             <Route path = "/voiceofeka" element = {<Voicers/>} />
             <Route path = "/bestmanager" element = {<Mngrrs></Mngrrs>} />
             <Route path = "/ideathon" element = {<Idears></Idears>} />
-            <Route path = "/paperpresentation" element = {<span>paperpresentation</span>} />
-            <Route path = "/themedance" element = {<span>themedance</span>} />
-            <Route path = "/makethewall" element = {<span>makethewall</span>} />
+            <Route path = "/paperpresentation" element = {<Paperrs/>} />
+            <Route path = "/themedance" element = {<Themedancerules/>} />
+            <Route path = "/makethewall" element = {<Makethewallrs/>} />
             <Route path = "*" element = {<Navigate  to = "/"/>}/>
 
         </Routes>

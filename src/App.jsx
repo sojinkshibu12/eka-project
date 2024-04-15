@@ -35,7 +35,7 @@ const App = ()=> {
       <Timer/>
       <Autoshow/>
       <Roboticexpo/>
-      {/* <Programs/> */}
+      <Programs/>
 
 
       

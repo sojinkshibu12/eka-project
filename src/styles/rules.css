@@ -15,7 +15,7 @@
     
     height: 70%;
     text-align: left;
-    font-size: 35px;
+    font-size: 100%;
     color: white;
 
 }
@@ -43,3 +43,10 @@
 .register:hover{
     opacity: 0.8;
 }
+
+/* @media  screen and (max-width: 637px){
+    .rulesp{
+
+        font-size: 25px;
+    }
+} */

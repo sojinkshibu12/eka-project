@@ -17,7 +17,7 @@ const Navbar = () => {
             const quotesend = document.querySelector('#mainconatainer_quotes').offsetTop + document.querySelector('#mainconatainer_quotes').offsetHeight;
             const ghoonies = document.querySelector('#ghoonies').offsetTop+500 ;
             const ghooniesend = document.querySelector('#ghoonies').offsetTop+500 + document.querySelector('#ghoonies').offsetHeight;
-            // const programs = document.querySelector('#programs').offsetTop ;
+            const programs = document.querySelector('#programs').offsetTop ;
 
 
             if(slideInAt >= banner && slideInAt <= bannerend )
@@ -35,10 +35,10 @@ const Navbar = () => {
             else
                 setghoonies(false);
 
-            // if(slideInAt >= programs +500 && slideInAt <= programs+1000 )
-            //     setprograms(true);
-            // else
-            //     setprograms(false);
+            if(slideInAt >= programs +500 && slideInAt <= programs+1000 )
+                setprograms(true);
+            else
+                setprograms(false);
 
             
         }
@@ -73,7 +73,7 @@ const Navbar = () => {
   const[isbanner,setbanner] = useState(false);
   const[isquote,setquote] = useState(false);
   const[isghoonies,setghoonies] = useState(false);
-  // const[isprograms,setprograms] = useState(false);
+  const[isprograms,setprograms] = useState(false);
 
 
 
@@ -100,12 +100,12 @@ const Navbar = () => {
 
 
 
-  // const homeclick4 = () => {
-  //   const element = document.getElementById("programs");
-  //   if (element) {
-  //     smoothScrollTo(element, 2000); 
-  //   }
-  // };
+  const homeclick4 = () => {
+    const element = document.getElementById("programs");
+    if (element) {
+      smoothScrollTo(element, 2000); 
+    }
+  };
 
 
 
@@ -116,7 +116,7 @@ const Navbar = () => {
           <h4 className={`link ${isbanner ? 'underlined' : ''}`} onClick={homeclick1}>HOME</h4>
           <h4 className={`link ${isquote ? 'underlined' : ''}`} onClick={homeclick2}>ABOUT</h4>
           <h4 className={`link ${isghoonies ? 'underlined' : ''}`} onClick={homeclick3}>EVENTS</h4>
-          {/* <h4 className={`link ${isprograms ? 'underlined' : ''}`} onClick={homeclick4}>programs</h4> */}
+          <h4 className={`link ${isprograms ? 'underlined' : ''}`} onClick={homeclick4}>PROGRAMS</h4>
         </li>
 
     </div>

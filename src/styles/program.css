@@ -1,6 +1,8 @@
 .maincontainer{
     height: 100vh;
     width: 100%;
+
+    
 }
 
 .subcontainer{
@@ -101,8 +103,7 @@
     color: white;
     display: flex;
     flex-direction: row;
-    font-size: 135px;
-    
+    font-size: 135px; 
     -webkit-transform: skewY(-5deg);
     -moz-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);
@@ -110,18 +111,7 @@
     transform: skewY(-5deg);
     
 }
-.blackbar{
-    bottom: 50px;
-    position: absolute;
-    height: 100px;
-    width: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 
 
 @keyframes marquee {
@@ -129,7 +119,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-105%);
     }
 
 }
@@ -147,6 +137,9 @@
     .backgroundmain{
         gap: 50px;
     }
+
+
+    
 }
 
 
@@ -162,4 +155,5 @@
         height: 350px;
         width: 250px;
     }
+
 }

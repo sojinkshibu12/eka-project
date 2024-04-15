@@ -1,5 +1,6 @@
 import "./styles/program.css"
-
+import prg1 from "./img/THAMARA1 (1).webp"
+import prg2 from "./img/FEJOO100.webp"
 const Programs = ()=>{
 
     return(
@@ -9,18 +10,14 @@ const Programs = ()=>{
 
                 <div className="persons">
                     <div className="person1">
-                        <img  className = "image1"src="" alt="one" />
-                        <div className="blackbar">
-                            <h1 className="name"></h1>
-                        </div>
+                        <img  className = "image1"src={prg1} alt="one" />
+
                     </div>
 
 
                     <div className="person2">
-                    <img  className = "image1"src="" alt="two" />
-                        <div className="blackbar">
-                            <h1 className="name"></h1>
-                        </div>
+                    <img  className = "image1"src={prg2} alt="two" />
+
                     </div>
                 </div>
 
@@ -28,43 +25,39 @@ const Programs = ()=>{
                 <div className="backgroundmain">
 
                             <div className="background-text">
-
                             <div className="first">
-                                <div className="outline">BabyJean </div>
-                                <div className="gowry">GowryLekshmi</div>
-                                <div className="baby">BabyJean </div>
-                                <div className="outline">GowryLekshmi</div>
-                                <div className="baby">BabyJean </div>
-                                <div className="outline">GowryLekshmi</div>
+                                <div className="outline">Sanjay</div>
+                                <div className="gowry">Fejo</div>
+                                <div className="baby">ThamarasseryChuram</div>
+                                <div className="outline">LILPAYYAN</div>
+                                <div className="baby">Fejo</div>
+                                <div className="outline">ThamarasseryChuram</div>
                             </div>
-
                             <div className="first">
-                                <div className="baby">BabyJean </div>
-                                <div className="outline">GowryLekshmi</div>
-                                <div className="baby">BabyJean </div>
-                                <div className="gowry">GowryLekshmi</div>
-                                <div className="outline">BabyJean </div>
-                                <div className="gowry">GowryLekshmi</div>
+                                <div className="baby">Sanjay</div>
+                                <div className="outline">ThamarasseryChuram</div>
+                                <div className="baby">LILPAYYAN</div>
+                                <div className="gowry">ThamarasseryChuram</div>
+                                <div className="outline">Adarshadj</div>
+                                <div className="gowry">ThamarasseryChuram</div>
                             </div>
                             </div>
                             <div className="background-text1">
-
                             <div className="first">
-                                <div className="baby">BabyJean </div>
-                                <div className="outline">GowryLekshmi</div>
-                                <div className="outline">BabyJean </div>
-                                <div className="gowry">GowryLekshmi</div>
-                                <div className="outline">BabyJean </div>
-                                <div className="gowry">GowryLekshmi</div>
+                                <div className="baby">LILPAYYAN</div>
+                                <div className="outline">ThamarasseryChuram</div>
+                                <div className="outline">Sanjay</div>
+                                <div className="gowry">ThamarasseryChuram</div>
+                                <div className="outline">Adarshadj</div>
+                                <div className="gowry">ThamarasseryChuram</div>
                             </div>
-
                             <div className="first">
-                                <div className="outline">BabyJean </div>
-                                <div className="gowry">GowryLekshmi</div>
-                                <div className="outline">BabyJean </div>
-                                <div className="gowry">GowryLekshmi</div>
-                                <div className="outline">BabyJean </div>
-                                <div className="gowry">GowryLekshmi</div>
+                                <div className="outline">LILPAYYAN</div>
+                                <div className="gowry">ThamarasseryChuram</div>
+                                <div className="outline">Sanjay</div>
+                                <div className="gowry">ThamarasseryChuram</div>
+                                <div className="outline">Fejo</div>
+                                <div className="gowry">ThamarasseryChuram</div>
                             </div>
                             </div>
 
